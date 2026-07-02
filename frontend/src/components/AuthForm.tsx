@@ -1,6 +1,4 @@
 type Props = {
-  mode: "login" | "register";
-  setMode: (mode: "login" | "register") => void;
   username: string;
   setUsername: (val: string) => void;
   loading: boolean;
@@ -9,8 +7,6 @@ type Props = {
 };
 
 export default function AuthForm({
-  mode,
-  setMode,
   username,
   setUsername,
   loading,
@@ -21,27 +17,12 @@ export default function AuthForm({
     <>
       <h1>Face Authentication</h1>
 
-      <div className="mode-switch">
-        <button
-          className={mode === "login" ? "active" : ""}
-          onClick={() => setMode("login")}
-        >
-          Login
-        </button>
-
-        <button
-          className={mode === "register" ? "active" : ""}
-          onClick={() => setMode("register")}
-        >
-          Register
-        </button>
-      </div>
-
       <input
         className="input"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
         placeholder="Enter username"
+        disabled={loading}
       />
 
       {loading && <div className="info">Processing face...</div>}
