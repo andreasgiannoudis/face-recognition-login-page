@@ -63,6 +63,10 @@
 
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.7);
+
+  h1{
+    color: #fff;
+  }
 }
 
 /* HEADER */
@@ -88,6 +92,8 @@
   padding: 6px;
   border-radius: 12px;
   margin-bottom: 1.5rem;
+
+  
 
   button {
     flex: 1;

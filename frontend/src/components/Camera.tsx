@@ -21,7 +21,7 @@ export default function Camera({ onCapture }: CameraProps) {
       <Webcam
         ref={webcamRef}
         screenshotFormat="image/jpeg"
-        width={500}
+        width={400}
         mirrored
       />
 

@@ -4,6 +4,7 @@ import AuthPage from "./pages/AuthPage";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 
+import "./App.css";
 import "./styles/auth.scss";
 import "./styles/dashboard.scss";
 
